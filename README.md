@@ -1,9 +1,9 @@
 # Teste - Mairon Duarte Costa
-## Introdução do projeto
+## **Introdução do projeto**
 
 Esse projeto é a junção dos dois testes ( teste_excel, teste_sql_perguntas_(1) ), fiz o teste de word/sql de forma que seja possível executar as suas etapas.
 
-## Arquitetura do projeto
+## **Arquitetura do projeto**
 
 ![image.png](img/modelagem_sql.png)
 
@@ -18,7 +18,7 @@ Para esse projeto foi utilizado o SQL-Server, para a execução da pasta **src/*
 git clone https://github.com/Mairondc21/teste_Mairon.git
 ```
 
-1. Execute o src/create_table.sql, Certifique-se de Criar também o Database mercantil
+2. Execute o src/create_table.sql, Certifique-se de Criar também o Database mercantil
 
 ```sql
 CREATE DATABASE mercantil;
@@ -57,19 +57,5 @@ INSERT INTO CLIENTE (COD_PESSOA, COD_AG, DATA_RFC, MAT_GERENTE) VALUES
 (4, 105, '2022-01-01', 205);
 ```
 
-1. Execute o arquivo src/respostas.sql - Não precisa executar a 1) pergunta
+3. Execute o arquivo src/respostas.sql - Não precisa executar a 1) pergunta
 
-## Respostas.sql
-
-De acordo com o arquivo em word abaixo contém as respostas esperadas executando com sucesso as outras etapas
-
-1. Selecione o CPF, o NOME e o SEXO de todas as pessoas físicas (TIPO_PESSOA = ‘F’) que tenha o nome ‘SILVA’.
-
-```sql
-SELECT 
-	CPF,
-	NOME,
-	SEXO
-FROM dbo.PESSOA
-WHERE TIPO_PESSOA = 'F' AND NOME LIKE '%SILVA%';
-```
